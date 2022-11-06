@@ -10,14 +10,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --noStackTrace || exit(0)",
-    "test:module1": "react-scripts test --env=jsdom --noStackTrace module1 || true",
-    "test:module2": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module2 || true",
-    "test:module3": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module3 || true",
-    "test:module4": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module4 || true",
-    "test:module5": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module5 || true",
-    "test:module6": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module6 || true",
-    "test:module7": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module7 || true",
+    "test": "react-scripts test --coverage --watchAll=false",
+    "test:module1": "react-scripts test --env=jsdom --noStackTrace module1 --coverage --watchAll=false",
+    "test:module2": "react-scripts test --env=jsdom --noStackTrace module2 --coverage --watchAll=false",
+    "test:module3": "react-scripts test --env=jsdom --noStackTrace module3 --coverage --watchAll=false",
+    "test:module4": "react-scripts test --env=jsdom --noStackTrace module4 --coverage --watchAll=false",
+    "test:module5": "react-scripts test --env=jsdom --noStackTrace module5 --coverage --watchAll=false",
+    "test:module6": "react-scripts test --env=jsdom --noStackTrace module6 --coverage --watchAll=false",
+    "test:module7": "react-scripts test --env=jsdom --noStackTrace module7 --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "jest": {
