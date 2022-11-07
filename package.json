@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll=false",
+    "test": "react-scripts test --env=jsdom --noStackTrace --coverage --watchAll=false",
     "test:module1": "react-scripts test --env=jsdom --noStackTrace module1 --coverage --watchAll=false",
     "test:module2": "react-scripts test --env=jsdom --noStackTrace module2 --coverage --watchAll=false",
     "test:module3": "react-scripts test --env=jsdom --noStackTrace module3 --coverage --watchAll=false",
